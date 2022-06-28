@@ -88,6 +88,7 @@ async setDocType (type) {
   I.click(this.elements.docTypeCombo);
   I.click(docType);
   I.waitForElement(`//div[contains(@id, 'batchtreepanel')]//div[contains(@class, 'x-grid-item-container')]//table//tr[contains(@data-qtip, '1: ${type} (1)')]`, 15);
+  I.waitForElement(this.docTypesFields.BHPassport.PassportNumber.label, 10);
 },
    
 async changeDocType (type) {
