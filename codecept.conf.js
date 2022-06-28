@@ -13,7 +13,7 @@ exports.config = {
   helpers: {
     Playwright: {
       url: 'http://192.168.0.110/TotalAgility/Forms',
-      show:true,
+      show: false,
       browser: 'chromium',
       video: true,
       windowSize: "1900x1000",
