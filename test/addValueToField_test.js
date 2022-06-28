@@ -17,7 +17,6 @@ Scenario ('Test adding a value to the field', async ({ I, workqueuePage, loginPa
     await SCNJPage.createJob();
     I.waitForElement(workqueuePage.activities.scan, 10);
     await workqueuePage.takeLastScanActivity();
-    
     let value = await I.grabAttributeFrom(SCNJPage.docTypesFields.BHPassport.PassportNumber.field, 'value');
     assert.include(value, text, "Value is incorrect");
     
