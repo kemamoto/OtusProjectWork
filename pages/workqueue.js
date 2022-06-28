@@ -35,6 +35,6 @@ module.exports = {
     let numOfElements = await I.grabNumberOfVisibleElements(this.activities.scan);
     I.click("("+ this.activities.scan + ")" + `[${numOfElements}]`);
     I.waitForElement(SCNJPage.panels.navigator, 10);
-     I.waitForElement(this.docTypesFields.BHPassport.PassportNumber.field, 10);
+    I.waitForElement(this.docTypesFields.BHPassport.PassportNumber.field, 10);
   },
 }
